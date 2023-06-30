@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("font-awesome.min.css");
+
+/*
+    Overflow by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Reset */
+
+    article {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+.has-error  {
+    border-color: #a94442 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+    article {
+        display: block;
+    }
+
+
+
+
+/* Containers */
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .container {
+        width: 108.5%;
+    }
+
+
+
+
+
+
+
+/* Basic */
+
+
+
+    input, textarea, select {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 12pt;
+        line-height: 1.75em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #3a3939;
+        text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+        -webkit-text-stroke: 0.25px;
+    }
+
+
+
+
+
+
+/* Form */
+
+
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form select,
+    form textarea {
+        -moz-transition: background-color 0.35s ease-in-out;
+        -webkit-transition: background-color 0.35s ease-in-out;
+        -ms-transition: background-color 0.35s ease-in-out;
+        transition: background-color 0.35s ease-in-out;
+        -webkit-appearance: none;
+        display: block;
+        background: #f1f1f1;
+        width: 95.5%;
+        max-width: 95.5%;
+        padding: 0.75em;
+    }
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    margin-bottom: 5px;
+}
+
+        form input[type="text"]:focus,
+        form input[type="email"]:focus,
+        form input[type="password"]:focus,
+        form select:focus,
+        form textarea:focus {
+            background: #f8f8f8;
+        }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form select {
+        line-height: 1em;
+    }
+
+    form textarea {
+        min-height: 10em;
+    }
+
+
+
+
+/* Button */
+
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    button,
+    .button {
+        -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+        -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+        -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+        transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+        -webkit-appearance: none;
+        position: relative;
+        display: inline-block;
+        border: 0;
+        background: rgb(209, 1, 22);
+        color: #fff;
+        text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+        cursor: pointer;
+        text-decoration: none;
+        outline: 0;
+        padding: 0.3em 3em 0.3em 3em;
+        margin-top: 0.6em;
+        text-align: center;
+        border-radius: 3em;
+        font-weight: 400;
+    }
+
+        input[type="button"]:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        button:hover,
+        .button:hover {
+            background: rgb(107, 0, 11);
+        }
+
+        input[type="button"].style2,
+        input[type="submit"].style2,
+        input[type="reset"].style2,
+        button.style2,
+        .button.style2 {
+            color: #3a3939;
+            background: #fff;
+            box-shadow: inset 0 0 0 1px #fff;
+        }
+
+            input[type="button"].style2:hover,
+            input[type="submit"].style2:hover,
+            input[type="reset"].style2:hover,
+            button.style2:hover,
+            .button.style2:hover {
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff !important;
+                text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25) !important;
+            }
+
+        input[type="button"].style3,
+        input[type="submit"].style3,
+        input[type="reset"].style3,
+        button.style3,
+        .button.style3 {
+            background: none;
+            color: #3a3939;
+            box-shadow: inset 0 0 0 1px #dad9d9;
+        }
+
+            input[type="button"].style3:hover,
+            input[type="submit"].style3:hover,
+            input[type="reset"].style3:hover,
+            button.style3:hover,
+            .button.style3:hover {
+                background: rgba(58, 57, 57, 0.025);
+            }
+
+
+
+
+
+
+
+
+        .box.style3 {
+            background: #fff;
+            padding: 7px 7px 10px 7px;
+        }
+
+
+
+
+
+
