@@ -121,6 +121,12 @@ body {
 
 }
 
+.footer-section{
+
+    background-color: #333333 ;
+    color: white;
+}
+
 
 .light-section{
   background-color: #AAAAAA  ;
@@ -182,7 +188,10 @@ body {
 
   .custom-list {
     text-align: left;
-    padding-left: 40%;
+    padding-left: 30%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+
   }
 
   .fireplace-icon{
@@ -206,7 +215,13 @@ body {
         padding-left: 4%;
         padding-right: 4%;
       }
-
+      .about-text {
+        font-size: 1.5rem;
+      }
+      .custom-list{
+        font-size: 1.5rem;
+      }
+}
 
 
 /* SLIDER */
