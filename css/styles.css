@@ -159,7 +159,7 @@ body {
 
 .order-button{
   background-color: #B30000;
-  margin: 3% 0;
+  
   border-radius: 50px; /* Add border-radius property for rounded corners */
    font-size: 30px; /* Increase the font size */
    color: white;
