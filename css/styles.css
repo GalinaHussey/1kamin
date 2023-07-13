@@ -156,20 +156,19 @@ body {
   width: 100%;
 }
 
-
-.order-button{
+.order-button {
   background-color: #B30000;
-  
-  border-radius: 50px; /* Add border-radius property for rounded corners */
-   font-size: 30px; /* Increase the font size */
-   color: white;
-   padding: 1% 10%;
+  border-radius: 50px;
+  font-size: 30px;
+  color: white;
+  padding: 10px 30px; /* Adjust the padding values to provide consistent spacing */
 }
 
-.order-button:hover{
+.order-button:hover {
   background-color: white;
   color: #B30000;
 }
+
 
 .contact-button{
   background-color: #B30000;
