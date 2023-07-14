@@ -55,15 +55,15 @@ body {
 
 
 /* navbar dropdown */
-.dropdown-menu {
+.big-dropdown-menu {
   display: none;
 }
 
-.dropdown-menu.show {
+.big-dropdown-menu.show {
   display: block;
 }
 
-.dropdown:hover .dropdown-menu {
+.big-dropdown:hover .big-dropdown-menu {
   display: block;
 }
 
@@ -223,6 +223,8 @@ body {
         font-size: 1.7rem; /* Increase the font size for better readability */
       }
     }
+
+
 
 
 /* SLIDER */

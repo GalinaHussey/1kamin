@@ -84,69 +84,121 @@
 </head>
 
 <body>
-
-    <div class="container-fluid">
-
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg  navbar-dark">
-
-				<img src="images/logogold.png" class="navbar-brand logo" alt=""/>
-				<div class="navbar-brand">
-
-				<a class="navbar-contact" href="tel:89167765809">8 (916) 776-58-09</a><br>
-				<span class="navbar-contact-text">Email: <a class="navbar-contact" href="mailto:info@1kamin.ru">info@1kamin.ru</a><br>
-  Москва и Московская область</span>
-
-				</div>
-
-
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" title="Вернуться на главную страницу" href="index.html">Главная</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  title="Фотографии моих работ" href="#pricing">Портфолио</a>
-							<ul class="dropdown-menu">
+	<!-- Navbar for larger screens -->
+<div class="container-fluid d-none d-lg-block">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <img src="images/logogold.png" class="navbar-brand logo" alt="" />
+    <div class="navbar-brand">
+      <a class="navbar-contact" href="tel:89167765809">8 (916) 776-58-09</a><br>
+      <span class="navbar-contact-text"><br>
+      Москва и Московская область</span>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" title="Вернуться на главную страницу" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item big-dropdown  dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" title="Фотографии моих работ" href="#pricing">Портфолио</a>
+          <ul class="dropdown-menu big-dropdown-menu">
             <li><a class="dropdown-item" href="gallery_kaminopechi.html">Каминопечи</a></li>
-						            <li><hr class="dropdown-divider"></li>
+            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="gallery_mansardnie.html">Мансардные Печи</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="gallery_kamini.html">Камины</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="gallery_pechi.html">Печи</a></li>
-						<li><hr class="dropdown-divider"></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="gallery_pechi.html">Печи</a></li>
+            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="gallery_barbecue.html">Барбекю</a></li>
-						<li><hr class="dropdown-divider"></li>
+            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="gallery_trubi.html">Трубы</a></li>
           </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" href="#cta">Полезные советы</a>
-							<ul class="dropdown-menu">
+        </li>
+        <li class="nav-item big-dropdown  dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" href="#cta">Полезные советы</a>
+          <ul class="dropdown-menu big-dropdown-menu">
             <li><a class="dropdown-item" href="help_kaminopechi.html">О каминопечах</a></li>
-						            <li><hr class="dropdown-divider"></li>
+            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="help_pechi.html">О печах и их видах</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="help_kamini.html">О каминах и их видах</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="help_barbecue.html">О барбекю</a></li>
-				  </ul>
-            </li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="contact_us.html">Контакты</a>
-						</li>
-
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="help_barbecue.html">О барбекю</a></li>
           </ul>
-        </div>
-      </nav>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact_us.html">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+<!-- Navbar for smaller screens -->
+<nav class="navbar nav-small-screen navbar-dark bg-dark d-lg-none">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/logogold.png" class="logo-small-screen" alt=""></a>
+    <div class="navbar-brand">
+      <span><a class="navbar-contact" href="tel:89167765809">8 (916) 776-58-09</a><br>
+      Москва и Московская область</span>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header navbar-dark">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" title="Вернуться на главную страницу" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item small-dropdown dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" title="Фотографии моих работ">Портфолио</a>
+            <ul class="dropdown-menu small-dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="gallery_kaminopechi.html">Каминопечи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="gallery_mansardnie.html">Мансардные Печи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="gallery_kamini.html">Камины</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="gallery_pechi.html">Печи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="gallery_barbecue.html">Барбекю</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="gallery_trubi.html">Трубы</a></li>
+            </ul>
+          </li>
+          <li class="nav-item small-dropdown  dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" title="Полезные советы">Полезные советы</a>
+            <ul class="dropdown-menu small-dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="help_kaminopechi.html">О каминопечах</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="help_pechi.html">О печах и их видах</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="help_kamini.html">О каминах и их видах</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="help_barbecue.html">О барбекю</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Контакты</a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
 
 
 
@@ -309,7 +361,7 @@
 	</section>
 
 
-<section class="footer-section">
+<section class="dark-section">
 	<div class="container">
 	  <footer class="py-5">
 	    <div class="row">
