@@ -24,7 +24,8 @@ body {
 
 .navbar-contact{
   color: white;
-  font-size: 15px;
+  font-size: 25px;
+  padding: 15px;
 }
 
 .navbar-contact:hover{
@@ -34,7 +35,14 @@ body {
 .navbar-contact-text{
   color: #ECE4D7;
   font-size: 15px;
+}
 
+.whatsapp-logo{
+  width: 13%;
+}
+
+.phone-logo{
+  width: 15%;
 }
 
 .logo{
@@ -47,7 +55,7 @@ body {
   margin: 0 10px;
 }
 
-.nav-link:hover {
+.big-nav-link:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
     color: #FF4500 ;
@@ -88,7 +96,7 @@ body {
 
 }
 
-.dropdown-menu a:hover {
+.big-dropdown-menu a:hover {
   background-color: #555555 ;
   color: #FF4500 ;
   transform: scale(1.1); /* Apply zoom effect on hover */
@@ -142,6 +150,10 @@ body {
   color: black;
 }
 
+.form-section{
+  background-color: #AAAAAA;
+}
+
 .features{
   padding: 3% 0;
 }
@@ -159,9 +171,10 @@ body {
 .order-button {
   background-color: #B30000;
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   padding: 10px 30px; /* Adjust the padding values to provide consistent spacing */
+  margin-top: 15px;
 }
 
 .order-button:hover {
@@ -202,6 +215,12 @@ body {
       padding-top: 2.5%;
       padding-bottom: 3%;
       width: 7%;
+    }
+
+
+    /* Contact Form */
+    .form-control{
+      width: 170%
     }
 
 
