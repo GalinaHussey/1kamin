@@ -1,68 +1,63 @@
+/* Global Styles */
 body {
-  font-family: "Montserrat";
-
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Containers */
 .container-fluid {
   text-align: center;
   background-color: #adadad;
- color: #5C3D2E;
- padding: 0;
+  color: #5C3D2E;
+  padding: 0;
 }
 
-
-
-/* NAVBAR */
-
-.navbar{
-  background-color: #333333 ;
+/* Navbar */
+.navbar {
+  background-color: #333333;
   color: white;
-  padding:  5px 10px;
+  padding: 5px 10px;
   line-height: 1.2;
 }
 
-.navbar-contact{
+.navbar-contact {
   color: white;
   font-size: 25px;
   padding: 15px;
 }
 
-.navbar-contact:hover{
-  color: #FF4500  ;
+.navbar-contact:hover {
+  color: #FF4500;
 }
 
-.navbar-contact-text{
+.navbar-contact-text {
   color: #ECE4D7;
   font-size: 15px;
 }
 
-.whatsapp-logo{
-  width: 13%;
+.whatsapp-logo {
+  width: 17%;
 }
 
-.phone-logo{
-  width: 15%;
+.phone-logo {
+  width: 20%;
 }
 
-.logo{
+.logo {
   width: 5%;
 }
 
-.nav-link{
+.nav-link {
   color: white;
   font-size: 20px;
   margin: 0 10px;
 }
 
 .big-nav-link:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
-    color: #FF4500 ;
-  }
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+  color: #FF4500;
+}
 
-
-/* navbar dropdown */
+/* Navbar Dropdown */
 .big-dropdown-menu {
   display: none;
 }
@@ -79,7 +74,7 @@ body {
   display: none;
   position: absolute;
   z-index: 999;
-  background-color: #555555 ;
+  background-color: #555555;
   padding: 10px;
 }
 
@@ -92,16 +87,14 @@ body {
   padding: 5px;
   color: white;
   text-decoration: none;
-  transition: transform 0.3s; /* Add transition property for smooth effect */
-
+  transition: transform 0.3s;
 }
 
 .big-dropdown-menu a:hover {
-  background-color: #555555 ;
-  color: #FF4500 ;
-  transform: scale(1.1); /* Apply zoom effect on hover */
+  background-color: #555555;
+  color: #FF4500;
+  transform: scale(1.1);
 }
-
 
 /* Headings */
 .big-heading {
@@ -110,7 +103,6 @@ body {
   padding-top: 6%;
   padding-left: 3%;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 .about-text {
@@ -118,43 +110,39 @@ body {
   line-height: 1.3;
   padding-top: 3%;
   font-family: 'Lato', sans-serif;
-
 }
 
-.dark-section{
-  background-color: #444444 ;
+.dark-section {
+  background-color: #444444;
   color: white;
   text-align: left;
   padding: 0 0 0 2%;
-
 }
 
-.footer-section{
-
-    background-color: #333333 ;
-    color: white;
+.footer-section {
+  background-color: #333333;
+  color: white;
 }
 
-
-.light-section{
-  background-color: #AAAAAA  ;
+.light-section {
+  background-color: #AAAAAA;
   color: black;
   text-align: left;
   padding: 0 2% 0 0;
 }
 
-.white-section{
+.white-section {
   background-color: white;
   padding: 2%;
   text-align: center;
   color: black;
 }
 
-.form-section{
+.form-section {
   background-color: #AAAAAA;
 }
 
-.features{
+.features {
   padding: 3% 0;
 }
 
@@ -164,7 +152,7 @@ body {
   right: 100%;
 }
 
-.fireplace-title-img{
+.fireplace-title-img {
   width: 100%;
 }
 
@@ -173,7 +161,7 @@ body {
   border-radius: 50px;
   font-size: 20px;
   color: white;
-  padding: 10px 30px; /* Adjust the padding values to provide consistent spacing */
+  padding: 10px 30px;
   margin-top: 15px;
 }
 
@@ -182,138 +170,83 @@ body {
   color: #B30000;
 }
 
-
-.contact-button{
+.contact-button {
   background-color: #B30000;
-  border-radius: 50px; /* Add border-radius property for rounded corners */
-   font-size: 20px; /* Increase the font size */
-   color: white;
-   padding: 10px 30px;
-
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  padding: 10px 30px;
 }
 
-.contact-button:hover{
+.contact-button:hover {
   background-color: white;
   color: #B30000;
 }
 
+.custom-list {
+  text-align: left;
+  padding-left: 30%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+}
 
+.fireplace-icon {
+  width: 12%;
+}
+
+.service-icon {
+  padding-top: 2.5%;
+  padding-bottom: 3%;
+  width: 7%;
+}
+
+/* Contact Form */
+.form-control {
+  width: 170%;
+}
+
+/* Update font size for offcanvas sidebar */
+.offcanvas-body .navbar-nav .nav-item .nav-link {
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+/* Increase the width of the offcanvas sidebar */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80vw; /* Adjust this value as needed */
+}
+
+/* Update offcanvas body width to fill the sidebar */
+.offcanvas-body {
+  width: 100%;
+}
+
+
+/* Update font size for the toggle button */
+.navbar-toggler {
+  font-size: 60px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 1050px) {
+  .dark-section {
+    position: static;
+    text-align: center;
+    width: auto;
+  }
+  .light-section {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .about-text {
+    font-size: 1.7rem;
+    line-height: 1.6;
+  }
   .custom-list {
-    text-align: left;
-    padding-left: 30%;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-
+    font-size: 1.7rem;
   }
-
-  .fireplace-icon{
-    width: 12%;
-  }
-
-
-    .service-icon{
-      padding-top: 2.5%;
-      padding-bottom: 3%;
-      width: 7%;
-    }
-
-
-    /* Contact Form */
-    .form-control{
-      width: 170%
-    }
-
-
-    @media (max-width: 1050px) {
-      .dark-section {
-        position: static;
-        text-align: center;
-        width: auto;
-      }
-      .light-section {
-        padding-left: 4%;
-        padding-right: 4%;
-      }
-      .about-text {
-        font-size: 1.7rem; /* Further increase the font size for better readability */
-        line-height: 1.6; /* Maintain the increased line-height for better spacing */
-      }
-      .custom-list {
-        font-size: 1.7rem; /* Increase the font size for better readability */
-      }
-    }
-
-
-
-
-/* SLIDER */
-/*
-#slider-wrapper {
-    background:url(images/top.jpg) no-repeat;
-    width: 987px;
-    height: 317px;
-    margin:0 auto;
 }
-
-#slider {
-    position:relative;
-    width: 987px;
-    height: 317px;
-    background:url(images/loading.gif) no-repeat 50% 50%;
-}
-#slider img {
-    position:absolute;
-    top:0px;
-    left:0px;
-    display:none;
-}
-#slider a {
-    border:0;
-    display:block;
-}
-
-.nivo-controlNav {
-    position:absolute;
-    left: 0px;
-    bottom:-32px;
-    display: none;
-}
-.nivo-controlNav a {
-    display:block;
-    width:22px;
-    height:22px;
-    background:url(images/bp.png) no-repeat;
-    text-indent:-9999px;
-    border:0;
-    margin-right:3px;
-    float:left;
-}
-.nivo-controlNav a.active {
-    background-position:0 -22px;
-    background:url(images/bp_hover.png) no-repeat;
-}
-
-.nivo-directionNav a {
-    display:block;
-    width:30px;
-    height:30px;
-    background:url(images/arrows.png) no-repeat;
-    text-indent:-9999px;
-    border:0;
-}
-a.nivo-nextNav {
-    background-position:-30px 0;
-    right:15px;
-}
-a.nivo-prevNav {
-    left:15px;
-}
-
-.nivo-caption {
-    text-shadow:none;
-    font-family: Helvetica, Arial, sans-serif;
-}
-.nivo-caption a {
-    color:#efe9d1;
-    text-decoration:underline;
-} */
