@@ -42,8 +42,13 @@ body {
 }
 
 .logo {
-  width: 5%;
+  width: 100px;
 }
+
+.logo-small-screen{
+  width: 120px;
+}
+
 
 .nav-link {
   color: white;
