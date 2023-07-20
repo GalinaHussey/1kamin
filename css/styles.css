@@ -211,6 +211,10 @@ body {
   padding-bottom: 50px;
 }
 
+.offcanvas-body .navbar-nav .nav-item .dropdown-item{
+  font-size: 30px;
+}
+
 /* Increase the width of the offcanvas sidebar */
 .offcanvas {
   position: fixed;
