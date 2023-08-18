@@ -260,6 +260,10 @@ body {
 
 }
 
+.sidebar-text:hover{
+  color: white;
+}
+
 /* Update font size for offcanvas sidebar */
 .offcanvas-body .navbar-nav .nav-item .nav-link {
   font-size: 30px;
