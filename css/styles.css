@@ -3,10 +3,16 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.feature-text{
+  font-size: 27px;
+  color: #CCCCCC;
+  padding-bottom: 60px;
+}
+
+
 .container-fluid {
   text-align: center;
-  background-color: #adadad;
-  color: #5C3D2E;
+
   padding: 0;
 }
 
@@ -164,10 +170,14 @@ body {
 }
 
 .light-section {
-  background-color: #AAAAAA;
-  color: black;
+  background-color: grey;
+  color: white;
   text-align: left;
   padding: 0 2% 0 0;}
+
+  /* p.light-section{
+    color: black;
+  } */
 
 .white-section {
   background-color: white;
