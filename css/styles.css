@@ -59,12 +59,9 @@ body {
 }
 
 .whatsapp-logo {
-  width: 17%;
+  width: 20px;
 }
 
-.phone-logo {
-  width: 20%;
-}
 
 .logo {
   width: 100px;
@@ -210,7 +207,7 @@ body {
 .order-button {
   background-color: #B30000;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   padding: 10px 30px;
   margin-top: 15px;
@@ -259,15 +256,20 @@ body {
 
 .sidebar-text{
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 
 }
 
 /* Update font size for offcanvas sidebar */
 .offcanvas-body .navbar-nav .nav-item .nav-link {
-  font-size: 50px;
+  font-size: 30px;
   padding-bottom: 50px;
 }
+
+.navbar-link {
+  text-decoration: none;
+}
+
 
 .offcanvas-body .navbar-nav .nav-item .dropdown-item{
   font-size: 30px;
@@ -352,4 +354,22 @@ body {
     .carousel-wrapper {
         display: block;
     }
+}
+
+
+
+
+
+.form-control:focus {
+  border-color: blue; /* Change to your desired color */
+  box-shadow: 0 0 0 0.25rem #808080; /* Grey box shadow */
+}
+
+.contact-form{
+  margin-left: 100px;
+}
+
+
+.closing{
+  font-size: 30px;
 }
