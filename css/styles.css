@@ -9,6 +9,9 @@ body {
   padding-bottom: 60px;
 }
 
+.feature-title{
+  font-size: 40px;
+}
 
 .container-fluid {
   text-align: center;
