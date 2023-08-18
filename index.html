@@ -142,17 +142,21 @@
 <!-- Navbar for smaller screens -->
 <nav class="navbar nav-small-screen navbar-dark bg-dark d-lg-none">
   <div class="container">
+		 <div class="navbar-top">
+			  <div class="navbar-icons">
     <a class="navbar-brand" href="#"><img src="images/logonew.png" class="logo-small-screen" alt=""></a>
-    <div class="navbar-brand">
-			<a class="navbar-brand" href="tel:89167765809"><img src="images/phone-icon.png"  href="tel:89167765809" class="phone-logo" alt=""></a>
-			<a class="navbar-brand" href="https://api.whatsapp.com/send?phone=79167765809"><img src="images/whatsapp-icon.png"  href="https://api.whatsapp.com/send?phone=79167765809" class="whatsapp-logo" alt=""></a>
+		<a class="navbar-brand" href="tel:89167765809"><img src="images/phone-icon.png"  href="tel:89167765809" class="phone-logo-top" alt=""></a>
+		<a class="navbar-brand" href="https://api.whatsapp.com/send?phone=79167765809"><img src="images/whatsapp-icon.png"  href="https://api.whatsapp.com/send?phone=79167765809" class="whatsapp-logo-top" alt=""></a>
+		<span class="location">Москва и область</span>
+	</div>
 
-      Москва и область</span>
-    </div>
-    <button class="navbar-toggler p-0 border-0 navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+		<button class="navbar-toggler p-0 border-0 navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+</div>
+	  <!-- <div class="navbar-brand"> -->
+
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div class="offcanvas-header navbar-dark">
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
@@ -220,69 +224,271 @@
 			 "Искусство Огня: Камины, Печи, Барбекю в Москве и Области"
 "Элегантные камины, уютные печи и стильные барбекю" -->
 
-      <!-- Title -->
-			<section class="dark-section">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="big-heading"> Камины, Печи, Барбекю <br> в Москве и Области</h1>
-          <a href="order.html">
-            <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Заказать</button>
-          </a>
-        </div>
-        <div class="col-lg-6">
+<!-- CAROUSEL ON DESKTOP -->
+<div class="carousel-wrapper">
+			<div id="examples-carousel" class="carousel slide" data-bs-ride="carousel">
 
-						<div id="examples-carousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#examples-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#examples-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#examples-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#examples-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#examples-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				<button type="button" data-bs-target="#examples-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active container-fluid" data-bs-interval="2000">
+					<img class="carousel-img d-block w-100" src="images/top.jpg" alt="examples of my work">
+					<div class="carousel-caption d-none d-md-block">
+        <h5 class="carouselText">Камины, Печи, Барбекю в Москве и Области</h5>
+				<a href="order.html">
+					 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Заказать</button>
+				 </a>
+      </div>
+				</div>
+				<div class="carousel-item  container-fluid" data-bs-interval="3000">
+					<img class="carousel-img d-block w-100" src="images/top6.jpg" alt="examples of my work">
+					<div class="carousel-caption d-none d-md-block">
+        <h5 class="carouselText">Тепло и Уют Вашего Дома</h5>
+				<a href="order.html">
+					 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Подобрать Камин</button>
+				 </a>
+      </div>
+		</div>
+				<div class="carousel-item  container-fluid" data-bs-interval="3000">
+					<img class="carousel-img d-block w-100" src="images/top3.jpg" alt="examples of my work">
+					<div class="carousel-caption d-none d-md-block">
+        <h5 class="carouselText">Мы воплощаем ваши идеи в индивидуальных проектах</h5>
+				<a href="order.html">
+					 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Подобрать Печь</button>
+				 </a>
+      </div>
+				</div>
+				<div class="carousel-item  container-fluid" data-bs-interval="3000">
+					<img class="carousel-img d-block w-100" src="images/top2.jpg" alt="examples of my work">
+					<div class="carousel-caption d-none d-md-block">
+        <h5 class="carouselText">Работаем быстро, четко, под ключ</h5>
+				<a href="gallery_kamini.html">
+					 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Посмотреть работы</button>
+				 </a>
+      </div>
+				</div>
+				<div class="carousel-item  container-fluid" data-bs-interval="3000">
+					<img class="carousel-img d-block w-100" src="images/top5.jpg" alt="examples of my work">
+					<div class="carousel-caption d-none d-md-block">
+        <h5 class="carouselText">Создайте идеальное место для отдыха на природе <br> с нашими изделиями</h5>
+				<a href="order.html">
+					 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Подобрать Камин</button>
+				 </a>
+      </div>
+				</div>
+				<div class="carousel-item  container-fluid" data-bs-interval="3000">
+					<img class="carousel-img d-block w-100" src="images/top8.jpg" alt="examples of my work">
+					<div class="carousel-caption d-none d-md-block">
+        <h5 class="carouselText">На все выполненные работы предоставляю гарантию. Опыт работы - 25 лет.</h5>
+				<a href="order.html">
+					 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Связаться со мной</button>
+				 </a>
+      </div>
+				</div>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#examples-carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#examples-carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+</div>
+
+
+<!-- CAROUSEL ON THE PHONE -->
+<div class="phone-carousel-wrapper">
+
+<div id="phone-carousel" class="carousel slide" data-bs-ride="carousel">
+
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+		<button type="button" data-bs-target="#phone-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+
+
+	</div>
+
 							<div class="carousel-inner">
-								<div class="carousel-item active container-fluid" data-bs-interval="3000">
+								<div class="carousel-item active container-fluid" data-bs-interval="2000">
 									<img class="carousel-img d-block w-100" src="images/b-gal-4-17-resized.jpg" alt="examples of my work">
+									<div class="carousel-caption ">
+								<h5 class="carouselText">Камины, Печи, Барбекю в Москве и Области</h5>
+								<a href="order.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Заказать</button>
+								 </a>
+							</div>
 								</div>
 								<div class="carousel-item  container-fluid" data-bs-interval="3000">
 									<img class="carousel-img d-block w-100" src="images/b-gal-4-16-resized.jpg" alt="examples of my work">
+									<div class="carousel-caption">
+				        <h5 class="carouselText">Тепло и Уют Вашего Дома</h5>
+								<a href="order.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Подобрать Камин</button>
+								 </a>
+				      </div>
 								</div>
 								<div class="carousel-item  container-fluid" data-bs-interval="3000">
 									<img class="carousel-img d-block w-100" src="images/top6half.jpg" alt="examples of my work">
+									<div class="carousel-caption">
+								<h5 class="carouselText">Мы воплощаем ваши идеи в индивидуальных проектах</h5>
+								<a href="order.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Подобрать Печь</button>
+								 </a>
+							</div>
 								</div>
 								<div class="carousel-item  container-fluid" data-bs-interval="3000">
 									<img class="carousel-img d-block w-100" src="images/top6-half2.jpg" alt="examples of my work">
+									<div class="carousel-caption">
+				        <h5 class="carouselText">Работаем быстро, четко, под ключ</h5>
+								<a href="gallery_kamini.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Посмотреть работы</button>
+								 </a>
+				      </div>
 								</div>
 								<div class="carousel-item  container-fluid" data-bs-interval="3000">
 									<img class="carousel-img d-block w-100" src="images/top3-half.jpg" alt="examples of my work">
+									<div class="carousel-caption">
+								<h5 class="carouselText">Создайте идеальное место для отдыха на природе <br> с нашими изделиями</h5>
+								<a href="order.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Подобрать Камин</button>
+								 </a>
+							</div>
 								</div>
 								<div class="carousel-item  container-fluid" data-bs-interval="3000">
 									<img class="carousel-img d-block w-100" src="images/top5-half.jpg" alt="examples of my work">
+									<div class="carousel-caption">
+				        <h5 class="carouselText">На все выполненные работы предоставляю гарантию</h5>
+								<a href="order.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Связаться со мной</button>
+								 </a>
+				      </div>
 								</div>
 
 								<div class="carousel-item  container-fluid" data-bs-interval="3000">
 									<img class="carousel-img d-block w-100" src="images/top5-half2.jpg" alt="examples of my work">
+									<div class="carousel-caption">
+				        <h5 class="carouselText">Опыт работы - 25 лет</h5>
+								<a href="order.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Связаться со мной</button>
+								 </a>
+				      </div>
 								</div>
 
 								<div class="carousel-item  container-fluid" data-bs-interval="3000">
 									<img class="carousel-img d-block w-100" src="images/top8half.jpg" alt="examples of my work">
+									<div class="carousel-caption">
+				        <h5 class="carouselText">Гарантирую качество</h5>
+								<a href="order.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Консультация печника</button>
+								 </a>
+				      </div>
 								</div>
 
 								<div class="carousel-item  container-fluid" data-bs-interval="3000">
 									<img class="carousel-img d-block w-100" src="images/top5-half.jpg" alt="examples of my work">
+									<div class="carousel-caption">
+				        <h5 class="carouselText">Роскошь и функциональность камина ждут вас</h5>
+								<a href="order.html">
+									 <button type="button" id="sendToAdmin" class="btn btn-lg order-button">Узнать Подробнее</button>
+								 </a>
+				      </div>
 								</div>
 
 							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#examples-carousel" data-bs-slide="prev">
+							<button class="carousel-control-prev" type="button" data-bs-target="#phone-carousel" data-bs-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Previous</span>
 							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#examples-carousel" data-bs-slide="next">
+							<button class="carousel-control-next" type="button" data-bs-target="#phone-carousel" data-bs-slide="next">
 								<span class="carousel-control-next-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Next</span>
 							</button>
 						</div>
-					        </div>
-      </div>
-    </div>
-  </section>
+					</div>
 
 
+<!-- FEATURES -->
+		<div class="container px-4 py-5" id="icon-grid">
+		    <h2 class="pb-2 border-bottom">Icon grid</h2>
 
+		    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+		      <div class="col d-flex align-items-start">
+		        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+		        <div>
+		          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+		          <p>Paragraph of text beneath the heading to explain the heading.</p>
+		        </div>
+		      </div>
+		      <div class="col d-flex align-items-start">
+		        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+		        <div>
+		          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+		          <p>Paragraph of text beneath the heading to explain the heading.</p>
+		        </div>
+		      </div>
+		      <div class="col d-flex align-items-start">
+		        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+		        <div>
+		          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+		          <p>Paragraph of text beneath the heading to explain the heading.</p>
+		        </div>
+		      </div>
+		      <div class="col d-flex align-items-start">
+		        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
+		        <div>
+		          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+		          <p>Paragraph of text beneath the heading to explain the heading.</p>
+		        </div>
+		      </div>
+		      <div class="col d-flex align-items-start">
+		        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+		        <div>
+		          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+		          <p>Paragraph of text beneath the heading to explain the heading.</p>
+		        </div>
+		      </div>
+		      <div class="col d-flex align-items-start">
+		        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+		        <div>
+		          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+		          <p>Paragraph of text beneath the heading to explain the heading.</p>
+		        </div>
+		      </div>
+		      <div class="col d-flex align-items-start">
+		        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+		        <div>
+		          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+		          <p>Paragraph of text beneath the heading to explain the heading.</p>
+		        </div>
+		      </div>
+		      <div class="col d-flex align-items-start">
+		        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+		        <div>
+		          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+		          <p>Paragraph of text beneath the heading to explain the heading.</p>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
 
-	<section class="light-section">
+	<!-- <section class="light-section">
 
 	<div class="row">
 		<div class="col-lg-4">
@@ -299,10 +505,10 @@
 
 	</div>
 </div>
-</section>
+</section> -->
 
 <!-- Features -->
-<section class="dark-section features">
+<!-- <section class="dark-section features">
   <div class="text-center">
     <div class="row">
       <div class="col-lg-6 col-md-12 col-12 each-feature">
@@ -335,12 +541,12 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- Photo Carousel -->
 
-<section class="colored-section" id="testimonials">
+<!-- <section class="colored-section" id="testimonials">
 
 	<div id="examples-carousel" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
@@ -374,17 +580,9 @@
 		</button>
 	</div>
 
-</section>
+</section> -->
 
 
-
-  <!-- contact Form -->
-<section class="light-section">
-
-
-
-
-	</section>
 
 	    <!-- JS -->
 

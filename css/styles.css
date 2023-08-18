@@ -18,6 +18,22 @@ body {
   line-height: 1.2;
 }
 
+.navbar-brand {
+  display: inline-block;
+  margin-right: 15px; /* Add spacing between elements */
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-contact {
   color: white;
   font-size: 25px;
@@ -101,6 +117,23 @@ body {
   transform: scale(1.1);
 }
 
+
+/* Increase contrast and add text shadow */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  color: white; /* Text color */
+  padding: 10px; /* Add padding for better readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+  font-size: 20px;
+}
+.carouselText{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+
+
 /* Headings */
 .big-heading {
   font-size: 3.15rem;
@@ -121,26 +154,26 @@ body {
   background-color: #444444;
   color: white;
   text-align: left;
-  padding: 0 0 0 2%;
+    padding: 0 0 0 2%;
 }
 
 .footer-section {
   background-color: #333333;
   color: white;
+
 }
 
 .light-section {
   background-color: #AAAAAA;
   color: black;
   text-align: left;
-  padding: 0 2% 0 0;
-}
+  padding: 0 2% 0 0;}
 
 .white-section {
   background-color: white;
-  padding: 2%;
   text-align: center;
   color: black;
+    padding: 2%;
 }
 
 .form-section {
@@ -205,6 +238,7 @@ body {
   width: 7%;
 }
 
+
 /* Contact Form */
 .form-control {
   width: 170%;
@@ -213,6 +247,7 @@ body {
 .sidebar-text{
   color: white;
   font-size: 20px;
+
 }
 
 /* Update font size for offcanvas sidebar */
@@ -231,18 +266,40 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 80vw; /* Adjust this value as needed */
-}
+  width: 80vw; /* Adjust this value as needed */}
+
 
 /* Update offcanvas body width to fill the sidebar */
 .offcanvas-body {
   width: 100%;
 }
 
+.phone-logo{
+  width: 100px
+}
+.whatsapp-logo {
+  width: 80px; /* Adjust the width as needed */
+}
+
+.phone-logo-top{
+  width: 100%;
+}
+.whatsapp-logo-top{
+  width: 90%;
+}
+
+.location {
+  font-size: 100%;
+  color: white;
+  margin-left: 15px; /* Add spacing between elements */
+  margin-right: 15px;
+}
+
 
 /* Update font size for the toggle button */
 .navbar-toggler {
   font-size: 60px;
+
 }
 
 /* Media Query for smaller screens */
@@ -250,7 +307,7 @@ body {
   .dark-section {
     position: static;
     text-align: center;
-    width: auto;
+        width: auto;
   }
   .light-section {
     padding-left: 4%;
@@ -263,4 +320,23 @@ body {
   .custom-list {
     font-size: 1.7rem;
   }
+}
+
+
+@media (max-width: 767px) {
+    .phone-carousel-wrapper {
+        display: block; /* Show the carousel on smaller screens */
+    }
+    .carousel-wrapper {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .phone-carousel-wrapper {
+        display: none; /* Hide the carousel on larger screens */
+    }
+    .carousel-wrapper {
+        display: block;
+    }
 }
