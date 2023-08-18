@@ -323,7 +323,7 @@ body {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1050px) {
     .phone-carousel-wrapper {
         display: block; /* Show the carousel on smaller screens */
     }
@@ -332,7 +332,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1051px) {
     .phone-carousel-wrapper {
         display: none; /* Hide the carousel on larger screens */
     }
