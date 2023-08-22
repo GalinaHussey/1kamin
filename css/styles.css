@@ -3,6 +3,32 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+li{
+  padding-bottom: 10px;
+}
+
+.popular-services{
+  padding-left: 50px;
+
+}
+
+.services-block{
+  padding-left: 20;
+}
+
+
+.bio-text{
+  text-align: left;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.services-list{
+  font-size: 20px;
+  margin: 0 10px;
+  text-align: left;
+}
+
 .feature-text{
   font-size: 27px;
   color: #CCCCCC;
@@ -238,13 +264,13 @@ body {
 }
 
 .fireplace-icon {
-  width: 12%;
+  width: 25%;
 }
 
 .service-icon {
   padding-top: 2.5%;
-  padding-bottom: 3%;
-  width: 7%;
+  padding-bottom: 22px;
+  width: 17%;
 }
 
 
