@@ -157,10 +157,8 @@ body {
 }
 
 .dark-section {
-  background-color: #444444;
+  background-color: #666666;
   color: white;
-  text-align: left;
-    padding: 0 0 0 2%;
 }
 
 .footer-section {
@@ -210,7 +208,8 @@ body {
   font-size: 30px;
   color: white;
   padding: 10px 30px;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .order-button:hover {
@@ -323,11 +322,11 @@ body {
 
 /* Media Query for smaller screens */
 @media (max-width: 1050px) {
-  .dark-section {
+  /* .dark-section {
     position: static;
     text-align: center;
         width: auto;
-  }
+  } */
   .light-section {
     padding-left: 4%;
     padding-right: 4%;
