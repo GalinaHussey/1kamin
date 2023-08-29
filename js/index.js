@@ -1,3 +1,6 @@
+
+// //////////// REVIEWS//////////////
+
 $(document).ready(function () {
     // Function to switch to the next client element
     function switchToNext() {
