@@ -410,75 +410,12 @@ li{
 
 
 
-#quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 60px;
-}
-#quote-carousel .carousel-control {
-    background: none;
-    color: #CACACA;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px;
-}
-#quote-carousel .carousel-indicators {
-    position: relative;
-    top: auto;
-    bottom: 0px;
-    margin-top: 20px;
-}
-#quote-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    opacity: 0.4;
-    overflow: hidden;
-    transition: all .4s ease-in;
-    vertical-align: middle;
-
-}
-#quote-carousel .carousel-indicators .active {
-    width: 128px;
-    height: 128px;
-    opacity: 1;
-    transition: all .2s;
-}
-.carousel-item blockquote {
-    border-left: none;
-}
-.carousel-item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
-}
-
-.blockquote-footer{
-  color: white;
-  margin-top: 1rem;
-}
-
-
-
-.carousel-indicators li {
-    color: black; /* Set the text color to black */
-}
 
 
 
 
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 #testimonial-area .section-heading h2 {
-  font-size: 48px;
+  font-size: 50px;
   line-height: 58px;
 }
 
@@ -587,7 +524,7 @@ li{
 }
 
 .client-single.active .client-img img {
-  max-width: 160px;
+  max-width: 95%;
   margin: 0 auto 24px;
   border: 0;
 }
@@ -597,7 +534,7 @@ li{
 }
 
 .client-comment h3 {
-  font-size: 22px;
+  font-size: 30px;
   line-height: 32px;
   color: #505b6d;
 }
@@ -622,10 +559,10 @@ li{
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #testimonial-area .section-heading h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .client-comment h3 {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 28px;
   }
   .client-single.active {

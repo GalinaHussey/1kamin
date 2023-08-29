@@ -1,26 +1,50 @@
 $(document).ready(function () {
+    // Function to switch to the next client element
+    function switchToNext() {
+        var activeBlock = $('.client-single.active');
+        var nextBlock = activeBlock.next('.client-single');
 
-        $('.client-single').on('click', function (event) {
-           event.preventDefault();
+        if (!nextBlock.length) {
+            nextBlock = $('.client-single:first-child');
+        }
 
-           var active = $(this).hasClass('active');
+        var currentPos = nextBlock.attr('data-position');
+        var newPos = activeBlock.attr('data-position');
 
-           var parent = $(this).parents('.testi-wrap');
+        activeBlock.removeClass('active').removeClass(newPos).addClass('inactive').addClass(currentPos);
+        activeBlock.attr('data-position', currentPos);
 
-           if (!active) {
-               var activeBlock = parent.find('.client-single.active');
+        nextBlock.addClass('active').removeClass('inactive').removeClass(currentPos).addClass(newPos);
+        nextBlock.attr('data-position', newPos);
+    }
 
-               var currentPos = $(this).attr('data-position');
+    // Call switchToNext every 2 seconds
+    var interval = setInterval(switchToNext, 3000);
 
-               var newPos = activeBlock.attr('data-position');
+    // Pause the interval on client-single click
+    $('.client-single').on('click', function (event) {
+        event.preventDefault();
 
-               activeBlock.removeClass('active').removeClass(newPos).addClass('inactive').addClass(currentPos);
-               activeBlock.attr('data-position', currentPos);
+        clearInterval(interval);
 
-               $(this).addClass('active').removeClass('inactive').removeClass(currentPos).addClass(newPos);
-               $(this).attr('data-position', newPos);
+        var active = $(this).hasClass('active');
 
-           }
-       });
+        var parent = $(this).parents('.testi-wrap');
 
-  }(jQuery));
+        if (!active) {
+            var activeBlock = parent.find('.client-single.active');
+
+            var currentPos = $(this).attr('data-position');
+            var newPos = activeBlock.attr('data-position');
+
+            activeBlock.removeClass('active').removeClass(newPos).addClass('inactive').addClass(currentPos);
+            activeBlock.attr('data-position', currentPos);
+
+            $(this).addClass('active').removeClass('inactive').removeClass(currentPos).addClass(newPos);
+            $(this).attr('data-position', newPos);
+        }
+
+        // Restart the interval after 2 seconds
+        interval = setInterval(switchToNext, 2000);
+    });
+});
