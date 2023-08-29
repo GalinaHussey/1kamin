@@ -19,7 +19,7 @@ $(document).ready(function () {
     }
 
     // Call switchToNext every 2 seconds
-    var interval = setInterval(switchToNext, 3000);
+    var interval = setInterval(switchToNext, 3500);
 
     // Pause the interval on client-single click
     $('.client-single').on('click', function (event) {
@@ -45,6 +45,6 @@ $(document).ready(function () {
         }
 
         // Restart the interval after 2 seconds
-        interval = setInterval(switchToNext, 2000);
+        interval = setInterval(switchToNext, 3500);
     });
 });
