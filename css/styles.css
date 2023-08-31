@@ -600,3 +600,8 @@ li{
 .album-title{
   background-color: : black;
 }
+
+.card:hover {
+  transform: scale(1.05); /* Increase the scale factor for the desired effect */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
