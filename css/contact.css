@@ -1,6 +1,4 @@
-* {
-  font-family: "Poppins", sans-serif;
-}
+
 .contact-section {
   background-image: linear-gradient(
     to left bottom,
@@ -58,4 +56,19 @@ ion-icon:not([name="logo-codepen"]) {
   border: 1px solid currentColor;
   border-radius: 20%;
   padding: 1rem;
+}
+
+
+
+.whatsapp-logo-bottom{
+  width: 50px;
+  border: 1px solid currentColor;
+  border-radius: 20%;
+
+}
+
+.bottom-contact-text{
+  color: white;
+  /* font-size: 10px; */
+  text-decoration: none;
 }
