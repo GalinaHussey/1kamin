@@ -194,7 +194,7 @@ li{
 }
 
 .color-section{
-  background-color: #CC3E00;
+  background-color: #804F00;
   color: white;
 }
 
@@ -593,8 +593,10 @@ li{
     height: 580px;
   }
   #testimonial-area {
-    padding: 100px 0 0;
+    padding: 30px 0 50px;
   }
 }
 
-/* Media queries for other screen sizes... */
+.album-title{
+  background-color: : black;
+}
