@@ -97,9 +97,11 @@
   right: 1.25rem;
 }
 
-.modal-dialog-custom{
-  max-width: 65vw;
+@media (min-width: 1200px) {
+  .modal-dialog-custom {
+    max-width: 65vw;
     margin: auto;
+  }
 }
 
 @media (min-width: 1400px) {
