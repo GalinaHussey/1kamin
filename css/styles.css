@@ -509,6 +509,8 @@ li{
   transition-delay: 0.6s;
 }
 
+
+
 .client-single:not(.active) {
   transform: scale(0.55);
   z-index: 99;
@@ -648,4 +650,13 @@ li{
 
 .link{
   color: #B30000;
+}
+
+
+/* Add this CSS to your stylesheet */
+.carousel-button-container {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    z-index: 2; /* Make sure it appears above the image */
 }
