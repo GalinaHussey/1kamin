@@ -10,13 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const bsModal = new bootstrap.Modal(lightboxModal);
   const modalBody = lightboxModal.querySelector(".lightbox-content");
 
-  function createCaption (caption) {
+  let currentIndex;
+
+  function createCaption(caption) {
     return `<div class="carousel-caption d-none d-md-block">
         <h4 class="m-0">${caption}</h4>
       </div>`;
   }
 
-  function createIndicators (img) {
+  function createIndicators(img) {
     let markup = "", i, len;
 
     const countSlides = links.length;
@@ -35,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return markup;
   }
 
-  function createSlides (img) {
+  function createSlides(img) {
     let markup = "";
     const currentImgSrc = img.closest('.gallery-item').getAttribute("href");
 
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return markup;
   }
 
-  function createCarousel (img) {
+  function createCarousel(img) {
     const markup = `
       <!-- Lightbox Carousel -->
       <div id="lightboxCarousel" class="carousel slide carousel-fade" data-bs-ride="true">
@@ -80,22 +82,35 @@ document.addEventListener('DOMContentLoaded', () => {
     modalBody.innerHTML = markup;
   }
 
+  function navigateCarousel(direction) {
+    const lightboxCarousel = document.getElementById("lightboxCarousel");
+    const bsCarousel = new bootstrap.Carousel(lightboxCarousel);
+    
+    if (direction === 'prev') {
+      bsCarousel.prev();
+    } else {
+      bsCarousel.next();
+    }
+  }
+
+  function handleKeyboardNavigation(event) {
+    if (event.key === 'ArrowLeft') {
+      navigateCarousel('prev');
+    } else if (event.key === 'ArrowRight') {
+      navigateCarousel('next');
+    }
+  }
+
+  document.addEventListener('keydown', handleKeyboardNavigation);
+
   for (const link of links) {
     link.addEventListener("click", function (e) {
       e.preventDefault();
       const currentImg = link.querySelector("img");
-      const lightboxCarousel = document.getElementById("lightboxCarousel");
+      const parentCol = link.closest('.col');
+      currentIndex = [...parentCol.parentElement.children].indexOf(parentCol);
 
-      if (lightboxCarousel) {
-        const parentCol = link.closest('.col');
-        const index = [...parentCol.parentElement.children].indexOf(parentCol);
-
-        const bsCarousel = new bootstrap.Carousel(lightboxCarousel);
-        bsCarousel.to(index);
-      } else {
-        createCarousel(currentImg);
-      }
-
+      createCarousel(currentImg);
       bsModal.show();
     });
   }
@@ -104,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const fsEnlarge = document.querySelector(".btn-fullscreen-enlarge");
   const fsExit = document.querySelector(".btn-fullscreen-exit");
 
-  function enterFS () {
+  function enterFS() {
     lightboxModal.requestFullscreen().then({}).catch(err => {
       alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
     });
@@ -112,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fsExit.classList.toggle("d-none");
   }
 
-  function exitFS () {
+  function exitFS() {
     document.exitFullscreen();
     fsExit.classList.toggle("d-none");
     fsEnlarge.classList.toggle("d-none");
@@ -127,18 +142,4 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     exitFS();
   });
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
