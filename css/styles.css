@@ -432,6 +432,14 @@ li{
   width: 70%;
 }
 
+.info-img-kamen{
+  width: 30%;
+}
+
+.info-img-russian{
+  width: 50%;
+}
+
 
 
 .form-control:focus {
