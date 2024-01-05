@@ -423,8 +423,14 @@ li{
   }
 }
 
+.info{
+  padding: 0 0 0 100px;
+  font-size: larger;
+}
 
-
+.info-img{
+  width: 70%;
+}
 
 
 
