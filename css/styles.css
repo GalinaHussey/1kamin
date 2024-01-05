@@ -407,6 +407,24 @@ li{
 }
 
 
+@media (min-width: 992px) { /* Target large screens with a minimum width of 992px */
+  .row {
+    justify-content: center; /* This will center the columns in the row for flex items */
+  }
+  .col-lg-4 {
+    display: flex; /* Make the column a flex container */
+    justify-content: center; /* Center the card horizontally */
+    padding: 0 15px; /* Adjust padding to control space between albums */
+  }
+  .col-lg-4 .card {
+    margin: auto; /* Center the card within the column */
+    width: 100%; /* Ensure card takes up full width of the column */
+    max-width: 330px; /* Optional: Set a max-width if you want the cards to have a maximum size */
+  }
+}
+
+
+
 
 
 
