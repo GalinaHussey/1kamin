@@ -21,15 +21,23 @@
 .gallery-item {
   display: block;
 }
-
 .gallery-item img {
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.2s;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This ensures the image maintains its aspect ratio while covering the entire container */
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s;
+  width: 300px; /* Fixed width */
+  height: 400px; /* Fixed height */
+  object-fit: cover; /* Maintains aspect ratio */
+  object-position: center; /* Center the image within the element */
 }
-  
+
+.bbq img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s;
+  width: 400px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  object-fit: cover; /* Maintains aspect ratio */
+  object-position: center; /* Center the image within the element */
+}
 
 .gallery-item:hover img {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
