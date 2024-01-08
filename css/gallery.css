@@ -39,6 +39,26 @@
   object-position: center; /* Center the image within the element */
 }
 
+@media(max-width:991px){
+  .gallery-item img {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s;
+    width: 500px; /* Fixed width */
+    height: 600px; /* Fixed height */
+    object-fit: cover; /* Maintains aspect ratio */
+    object-position: center; /* Center the image within the element */
+  }
+  
+  .bbq img {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s;
+    width: 500px; /* Fixed width */
+    height: 350px; /* Fixed height */
+    object-fit: cover; /* Maintains aspect ratio */
+    object-position: center; /* Center the image within the element */
+  }
+}
+
 .gallery-item:hover img {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
 }
