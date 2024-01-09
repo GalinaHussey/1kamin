@@ -447,7 +447,23 @@ li{
 
 
 
+.contact-item {
+  justify-content: start; /* Aligns items to the start by default */
+}
 
+/* Media query for medium screens */
+@media (max-width: 1024px) {
+  .contact-item {
+      justify-content: center !important; /* Force center alignment on medium screens */
+      font-size: 40px;
+  }
+  .contact-text{
+    font-size: 50px;
+  }
+  .small-contact-text {
+    font-size: 30px;
+  }
+}
 
 
 
