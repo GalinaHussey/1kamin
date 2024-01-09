@@ -256,7 +256,7 @@
 							<h1 class="text-capitalize my-4">Свяжитесь с нами:</h1>
 
 						</div>
-						<form class="row mb-3" action="sendmail.php" method="POST">
+						<form class="row mb-3" action="https://formsubmit.co/hello@balletgalina.com" method="POST">
 
 
 							<div class="col-md-12 p-3">
@@ -269,8 +269,18 @@
 								<input required placeholder="Телефон" type="tel" name="Телефон" id="" />
 							</div>
 							<div class="col-md">
-								<textarea required name="" placeholder="Ваше сообщение" name="сообщение" cols="30" rows="5"></textarea>
+								<textarea required name="сообщение" placeholder="Ваше сообщение" cols="30" rows="5"></textarea>
 							</div>
+
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_cc" value="gal1gal1@mail.ru">
+
+                            <input type="hidden" name="_subject" value="Новая заявка!">
+                            <input type="hidden" name="_template" value="table">
+
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact_us.html">
+
+
 							<div class="text-end mt-4">
 								<input class="btn px-4 py-3 btn-outline-dark" type="submit" value="Отправить сообщение" />
 							</div>
