@@ -17,14 +17,14 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  border: none;
-  border-bottom: 2px solid rgb(128, 126, 126);
+  border: 1px solid rgb(128, 126, 126); /* Standard solid border */
   background: transparent;
   outline: none;
   width: 100%;
-  text-transform: capitalize;
   padding: 1rem 0.4rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect overall width */
 }
+
 .aside {
   background-image: linear-gradient(
     to left bottom,
