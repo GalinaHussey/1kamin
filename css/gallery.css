@@ -16,6 +16,22 @@
   }
 }
 
+/* Apply the animation to the image elements */
+.lightbox-modal .carousel-inner img {
+  animation: zoomin 10s linear infinite;
+}
+
+/* Add media query for mobile devices */
+@media (max-width: 767px) {
+  .lightbox-modal .carousel-inner img {
+    animation: none; /* Remove the animation for mobile devices */
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
 
 
 .gallery-item {
@@ -99,9 +115,7 @@
   width: 75%;
 }
 
-.lightbox-modal .carousel-inner img {
-  animation: zoomin 10s linear infinite;
-}
+
 
 .lightbox-modal .carousel-item .carousel-caption {
   right: 0;
